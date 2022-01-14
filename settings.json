@@ -1,0 +1,55 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        88
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "python.formatting.provider": "black",
+    "explorer.confirmDelete": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "[yaml]": {
+        "editor.defaultFormatter": "PascalReitermann93.vscode-yaml-sort"
+    },
+    "python.sortImports.args": [
+        "--profile",
+        "black"
+    ],
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--enable=W0614"
+    ],
+    "python.analysis.indexing": true,
+    "python.linting.banditPath": "${env:HOME}/.local/bin/bandit",
+    "python.linting.pylintPath": "${env:HOME}/.local/bin/pylint",
+    "python.linting.flake8Path": "${env:HOME}/.local/bin/flake8",
+    "python.formatting.blackPath": "${env:HOME}/.local/bin/black",
+    "explorer.confirmDragAndDrop": false,
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/.tox": true,
+        "**/.pytest_cache": true
+    }
+}

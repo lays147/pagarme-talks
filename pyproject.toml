@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "demo"
+version = "0.1.0"
+description = ""
+authors = ["Lays Rodrigues <lays.silva@pagar.me>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+colorama = "^0.4.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-coverage = "^0.0"
+tox = "^3.24.5"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov-report term-missing --cov=demo"
+testpaths = ["tests"]
